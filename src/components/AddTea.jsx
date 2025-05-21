@@ -42,7 +42,7 @@ const AddTea = () => {
               />
             </div>
           </div>
-          <button className="btn">Add Tea</button>
+          <button className="btn bg-amber-200">Add Tea</button>
         </div>
       </form>
     </div>
