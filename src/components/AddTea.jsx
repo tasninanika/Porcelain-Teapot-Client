@@ -3,12 +3,14 @@ import React from "react";
 const AddTea = () => {
   return (
     <div className="bg-[#F4F3F0] p-24">
-      <h2 className="text-3xl font-extrabold">Add Tea</h2>
+      <h2 className="text-3xl font-bold text-center mb-10">Add Tea</h2>
       <form action="">
         <div className="flex flex-col gap-10 justify-center items-center">
           <div className="flex gap-10">
             <div className="flex flex-col">
-              <label htmlFor="">Tea Name</label>
+              <label htmlFor="" className="mb-4">
+                Tea Name
+              </label>
               <input
                 type="text"
                 placeholder="Enter tea name"
@@ -16,7 +18,9 @@ const AddTea = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="">Available quantity</label>
+              <label htmlFor="" className="mb-4">
+                Available quantity
+              </label>
               <input
                 type="text"
                 placeholder="Enter tea name"
@@ -26,7 +30,9 @@ const AddTea = () => {
           </div>
           <div className="flex gap-10">
             <div className="flex flex-col">
-              <label htmlFor="">Supplier</label>
+              <label htmlFor="" className="mb-4">
+                Supplier
+              </label>
               <input
                 type="text"
                 placeholder="Enter tea name"
@@ -34,7 +40,9 @@ const AddTea = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="">Details</label>
+              <label htmlFor="" className="mb-4">
+                Details
+              </label>
               <input
                 type="text"
                 placeholder="Enter tea name"
