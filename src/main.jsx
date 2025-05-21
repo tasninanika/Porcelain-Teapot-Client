@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AddTea from "./components/AddTea";
 import UpdateTea from "./components/UpdateTea";
+import App from "./App";
 
 const router = createBrowserRouter([
   {
