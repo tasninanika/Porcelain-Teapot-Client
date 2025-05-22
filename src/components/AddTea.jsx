@@ -1,6 +1,20 @@
-import React from "react";
-
 const AddTea = () => {
+  const handleAddTea = (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+
+    const name = form.name.value;
+    const chef = form.chef.value;
+    const supplier = form.supplier.value;
+    const taste = form.taste.value;
+    const category = form.category.value;
+    const details = form.details.value;
+    const url = form.url.value;
+
+    const newTea = { name, chef, supplier, taste, category, details, url };
+    console.log(newTea);
+  };
   return (
     <div className="w-10/12 mx-auto my-40">
       <div className="bg-[#F4F3F0] p-10 md:p-24">
@@ -11,7 +25,7 @@ const AddTea = () => {
           point of using Lorem Ipsum is that it has a more-or-less normal
           distribution of letters, as opposed to <br /> using Content here.
         </p>
-        <form>
+        <form onSubmit={handleAddTea}>
           <div className="space-y-10 max-w-5xl mx-auto">
             {/* Row 1 */}
             <div className="grid md:grid-cols-2 gap-10">
