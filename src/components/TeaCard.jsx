@@ -4,10 +4,10 @@ const TeaCard = ({ tea }) => {
   const { name, chef, url } = tea;
 
   return (
-    <div className="bg-[#F4F3F0] p-4 rounded-lg shadow-md flex items-center justify-between">
+    <div className="bg-[#F4F3F0] p-6 rounded-lg shadow-md flex items-center justify-between w-[500px] h-[250px]">
       {/* Image */}
       <div className="w-1/3">
-        <img src={url} alt={name} className="w-32 h-auto object-contain" />
+        <img src={url} alt={name} className="w-36 h-auto object-contain" />
       </div>
 
       {/* Text Content */}
