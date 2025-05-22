@@ -9,7 +9,7 @@ const AddTea = () => {
           <div className="flex gap-10">
             <div className="flex flex-col">
               <label htmlFor="" className="mb-4">
-                Tea Name
+                Name
               </label>
               <input
                 type="text"
@@ -19,7 +19,7 @@ const AddTea = () => {
             </div>
             <div className="flex flex-col">
               <label htmlFor="" className="mb-4">
-                Available quantity
+                Chef
               </label>
               <input
                 type="text"
@@ -41,7 +41,7 @@ const AddTea = () => {
             </div>
             <div className="flex flex-col">
               <label htmlFor="" className="mb-4">
-                Details
+                Taste
               </label>
               <input
                 type="text"
