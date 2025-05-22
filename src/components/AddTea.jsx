@@ -14,6 +14,11 @@ const AddTea = () => {
 
     const newTea = { name, chef, supplier, taste, category, details, url };
     console.log(newTea);
+
+    // send data to the server
+    fetch("http://localhost:5000/tea")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   };
   return (
     <div className="w-10/12 mx-auto my-40">
