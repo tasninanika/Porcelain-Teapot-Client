@@ -1,19 +1,40 @@
+import { FaEye, FaPen, FaTrash } from "react-icons/fa";
+
 const TeaCard = ({ tea }) => {
+  const { name, chef, url } = tea;
+
   return (
-    <div>
-      <div className="card card-side bg-base-100 shadow-sm">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            alt="Movie"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Watch</button>
-          </div>
+    <div className="bg-[#F4F3F0] p-4 rounded-lg shadow-md flex items-center justify-between">
+      {/* Image */}
+      <div className="w-1/3">
+        <img src={url} alt={name} className="w-32 h-auto object-contain" />
+      </div>
+
+      {/* Text Content */}
+      <div className="w-2/3 px-6 flex flex-col md:flex-row md:items-center justify-between">
+        <div className="space-y-2">
+          <p>
+            <span className="font-bold">Name:</span> {name}
+          </p>
+          <p>
+            <span className="font-bold">Chef:</span> {chef}
+          </p>
+          <p>
+            <span className="font-bold">Price:</span> 890 Taka
+          </p>
+        </div>
+
+        {/* Actions */}
+        <div className="flex flex-col gap-3 mt-4 md:mt-0">
+          <button className="bg-[#D2B48C] p-2 rounded hover:opacity-80">
+            <FaEye className="text-white" />
+          </button>
+          <button className="bg-[#3C3C3C] p-2 rounded hover:opacity-80">
+            <FaPen className="text-white" />
+          </button>
+          <button className="bg-red-500 p-2 rounded hover:opacity-80">
+            <FaTrash className="text-white" />
+          </button>
         </div>
       </div>
     </div>
