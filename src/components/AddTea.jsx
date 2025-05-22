@@ -16,7 +16,13 @@ const AddTea = () => {
     console.log(newTea);
 
     // send data to the server
-    fetch("http://localhost:5000/tea")
+    fetch("http://localhost:5000/tea", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newTea),
+    })
       .then((res) => res.json())
       .then((data) => console.log(data));
   };
