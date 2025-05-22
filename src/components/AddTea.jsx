@@ -91,9 +91,11 @@ const AddTea = () => {
             </div>
 
             <div className="text-center">
-              <button className="bg-[#D2B48C] text-lg font-semibold px-8 py-3 rounded hover:bg-[#F5F4F1] transition w-full border-1 border-[#331A15]">
-                Add Tea
-              </button>
+              <input
+                className="bg-[#D2B48C] text-lg font-semibold px-8 py-3 rounded hover:bg-[#F5F4F1] transition w-full border-1 border-[#331A15]"
+                type="submit"
+                value="Add Tea"
+              />
             </div>
           </div>
         </form>
