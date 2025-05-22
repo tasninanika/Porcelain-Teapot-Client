@@ -31,7 +31,7 @@ const AddTea = () => {
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",
-            text: "Do you want to continue",
+            text: "User added successfully",
             icon: "success",
             confirmButtonText: "Cool",
           });
