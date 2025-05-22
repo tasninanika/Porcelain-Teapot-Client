@@ -1,3 +1,5 @@
+import Swal from "sweetalert2";
+
 const AddTea = () => {
   const handleAddTea = (event) => {
     event.preventDefault();
@@ -24,7 +26,17 @@ const AddTea = () => {
       body: JSON.stringify(newTea),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success!",
+            text: "Do you want to continue",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+        }
+      });
   };
   return (
     <div className="w-10/12 mx-auto my-40">
