@@ -50,6 +50,38 @@ const AddTea = () => {
               />
             </div>
           </div>
+          <div className="flex gap-10">
+            <div className="flex flex-col">
+              <label htmlFor="" className="mb-4">
+                Category
+              </label>
+              <input
+                type="text"
+                placeholder="Enter tea name"
+                className="input w-96"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label htmlFor="" className="mb-4">
+                Details
+              </label>
+              <input
+                type="text"
+                placeholder="Enter tea name"
+                className="input w-96"
+              />
+            </div>
+          </div>
+          <div>
+            <label htmlFor="" className="mb-4">
+              Photo
+            </label>
+            <input
+              type="text"
+              placeholder="Enter tea name"
+              className="input w-96"
+            />
+          </div>
           <button className="btn bg-amber-200">Add Tea</button>
         </div>
       </form>
