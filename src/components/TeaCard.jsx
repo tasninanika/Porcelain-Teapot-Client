@@ -2,7 +2,7 @@ import { FaEye, FaPen, FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const TeaCard = ({ tea }) => {
+const TeaCard = ({ tea, teas, setTeas }) => {
   const { _id, name, chef, url } = tea;
 
   const handleDelete = (_id) => {
@@ -29,6 +29,10 @@ const TeaCard = ({ tea }) => {
                 text: "Your Tea has been deleted.",
                 icon: "success",
               });
+              const remaining = teas.filter(
+                (filterTea) => filterTea._id !== _id
+              );
+              setTeas(remaining);
             }
           });
       }
