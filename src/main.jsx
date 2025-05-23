@@ -7,6 +7,7 @@ import UpdateTea from "./components/UpdateTea";
 import App from "./App";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
+import AuthProvider from "./providers/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>
 );
