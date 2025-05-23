@@ -17,8 +17,9 @@ const router = createBrowserRouter([
     element: <AddTea></AddTea>,
   },
   {
-    path: "updateTea",
+    path: "updateTea/:id",
     element: <UpdateTea></UpdateTea>,
+    loader: ({ params }) => fetch(`http://localhost:5000/tea/${params.id}`),
   },
 ]);
 
