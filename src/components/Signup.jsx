@@ -1,9 +1,17 @@
+import { useContext } from "react";
 import Header from "./Header";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Signup = () => {
+  const { createUser } = useContext(AuthContext);
   const handleSignUp = (e) => {
     e.preventDefault();
-    console.log("form sign up");
+
+    const email = e.target.email.value;
+    const password = e.target.email.value;
+    console.log("form sign up", email, password);
+
+    // createUser()
   };
   return (
     <div>
