@@ -58,16 +58,16 @@ const TeaCard = ({ tea }) => {
 
         {/* Actions */}
         <div className="flex flex-col gap-3 mt-4 md:mt-0">
+          <button className="btn bg-[#D2B48C] p-2 rounded hover:opacity-80 flex items-center justify-center">
+            <FaEye className="text-white" />
+          </button>
+
           <Link
             to={`/updateTea/${_id}`}
-            className="btn bg-[#D2B48C] p-2 rounded hover:opacity-80 flex items-center justify-center"
+            className="btn bg-[#3C3C3C] p-2 rounded hover:opacity-80"
           >
-            <FaEye className="text-white" />
-          </Link>
-
-          <button className="btn bg-[#3C3C3C] p-2 rounded hover:opacity-80">
             <FaPen className="text-white" />
-          </button>
+          </Link>
 
           <button
             className="btn bg-red-500 p-2 rounded hover:opacity-80"
