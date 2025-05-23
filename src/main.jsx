@@ -5,6 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AddTea from "./components/AddTea";
 import UpdateTea from "./components/UpdateTea";
 import App from "./App";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
     path: "updateTea/:id",
     element: <UpdateTea></UpdateTea>,
     loader: ({ params }) => fetch(`http://localhost:5000/tea/${params.id}`),
+  },
+  {
+    path: "signin",
+    element: <Signin></Signin>,
+  },
+  {
+    path: "signup",
+    element: <Signup></Signup>,
   },
 ]);
 
