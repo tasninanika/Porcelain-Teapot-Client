@@ -1,7 +1,11 @@
 import { FaEye, FaPen, FaTrash } from "react-icons/fa";
 
 const TeaCard = ({ tea }) => {
-  const { name, chef, url } = tea;
+  const { _id, name, chef, url } = tea;
+
+  const handleDelete = (_id) => {
+    console.log(_id);
+  };
 
   return (
     <div className="bg-[#F4F3F0] p-6 rounded-lg shadow-md flex items-center justify-between w-[500px] h-[250px]">
@@ -32,7 +36,10 @@ const TeaCard = ({ tea }) => {
           <button className="btn bg-[#3C3C3C] p-2 rounded hover:opacity-80">
             <FaPen className="text-white" />
           </button>
-          <button className="btn bg-red-500 p-2 rounded hover:opacity-80">
+          <button
+            className="btn bg-red-500 p-2 rounded hover:opacity-80"
+            onClick={() => handleDelete(_id)}
+          >
             <FaTrash className="text-white" />
           </button>
         </div>
