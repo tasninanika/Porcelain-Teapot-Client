@@ -26,13 +26,13 @@ const TeaCard = ({ tea }) => {
 
         {/* Actions */}
         <div className="flex flex-col gap-3 mt-4 md:mt-0">
-          <button className="bg-[#D2B48C] p-2 rounded hover:opacity-80">
+          <button className="btn bg-[#D2B48C] p-2 rounded hover:opacity-80">
             <FaEye className="text-white" />
           </button>
-          <button className="bg-[#3C3C3C] p-2 rounded hover:opacity-80">
+          <button className="btn bg-[#3C3C3C] p-2 rounded hover:opacity-80">
             <FaPen className="text-white" />
           </button>
-          <button className="bg-red-500 p-2 rounded hover:opacity-80">
+          <button className="btn bg-red-500 p-2 rounded hover:opacity-80">
             <FaTrash className="text-white" />
           </button>
         </div>
