@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import "./App.css";
 import TeaCard from "./components/TeaCard";
 import { useState } from "react";
+import Header from "./Header";
 
 function App() {
   const loadedTeas = useLoaderData();
@@ -9,6 +10,7 @@ function App() {
 
   return (
     <>
+      <Header></Header>
       <div className="w-11/12 mx-auto my-10 flex flex-col justify-center items-center">
         <h1 className="text-6xl text-purple-600 text-center">
           Our Popular Products
