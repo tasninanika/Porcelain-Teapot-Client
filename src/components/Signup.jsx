@@ -28,7 +28,9 @@ const Signup = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log("user created to db", data);
+            if (data.insertedId) {
+              console.log("user created to db", data);
+            }
           });
       })
       .catch((error) => {
