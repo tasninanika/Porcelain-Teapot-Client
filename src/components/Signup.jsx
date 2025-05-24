@@ -14,8 +14,9 @@ const Signup = () => {
 
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
-        const newUser = { name, email };
+        console.log("user created at firebase", result.user);
+        const createdAt = result?.user?.metadata?.creationTime;
+        const newUser = { name, email, createdAt };
 
         // save new user info to the database
         fetch("http://localhost:5000/users", {
