@@ -7,13 +7,21 @@ const Signup = () => {
   const handleSignUp = (e) => {
     e.preventDefault();
 
+    const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.email.value;
-    console.log("form sign up", email, password);
+    console.log("form sign up", name, email, password);
 
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+
+        // save new user info to the database
+        fetch("", {})
+          .then((res) => res.json())
+          .then((data) => {
+            console.log("user created to db", data);
+          });
       })
       .catch((error) => {
         console.log("error", error);
