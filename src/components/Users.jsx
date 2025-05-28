@@ -3,10 +3,10 @@ import { useLoaderData } from "react-router-dom";
 
 const Users = () => {
   const loadedUsers = useLoaderData();
-  const [users, setUsers] = useState();
+  const [users, setUsers] = useState(loadedUsers);
   return (
     <div>
-      <h2 className="text-3xl">Users</h2>
+      <h2 className="text-3xl">Users: {users.length}</h2>
     </div>
   );
 };

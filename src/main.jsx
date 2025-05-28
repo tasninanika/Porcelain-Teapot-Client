@@ -8,6 +8,7 @@ import App from "./App";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import AuthProvider from "./providers/AuthProvider";
+import Users from "./components/Users";
 
 const router = createBrowserRouter([
   {
