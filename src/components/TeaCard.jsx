@@ -17,7 +17,7 @@ const TeaCard = ({ tea, teas, setTeas }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/tea/${_id}`, {
+        fetch(`https://porcelain-teapot-server.vercel.app/tea/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

@@ -22,7 +22,7 @@ const UpdateTea = () => {
     console.log(newTea);
 
     // send data to the server
-    fetch(`http://localhost:5000/tea/${_id}`, {
+    fetch(`https://porcelain-teapot-server.vercel.app/tea/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

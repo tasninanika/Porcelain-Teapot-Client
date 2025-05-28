@@ -19,7 +19,7 @@ const AddTea = () => {
     console.log(newTea);
 
     // send data to the server
-    fetch("http://localhost:5000/tea", {
+    fetch("https://porcelain-teapot-server.vercel.app/tea", {
       method: "POST",
       headers: {
         "content-type": "application/json",
