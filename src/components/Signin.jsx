@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import { useContext } from "react";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Signin = () => {
+  const { signInUser } = useContext(AuthContext);
   const handleSignIn = (e) => {
     e.preventDefault();
     console.log("form sign in");
